@@ -1,13 +1,128 @@
-body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  
+:root{
+    --columns-grid: repeat(3,1fr)
 }
 
-header{
-    display: flex;
-    width: inherit;
+
+
+body{
+    margin: 0;
+    padding:0;
+    display: grid;
+    align-items: center;
     align-content: center;
-    justify-content: space-between;
+
+  
+}
+header{
+    width: inherit;
+    display: grid;
+    grid-template-columns: var(--columns-grid);
+    column-gap: 40px;  
+    padding: 20px 30px;
+    justify-content: center;
+    align-content: center; 
+    border-bottom: #dbdbdb solid 1px;
+}
+
+.header-logo{
+    display: flex;
+    width: inherit; 
+    justify-items: center;
+}
+
+.header-logo img{
+    width: 100px;
+    height: 30px;
+}
+
+.header-search{
+    display: inline;
+    
+}
+
+.header-icons{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    column-gap: 10px;
+}
+
+.header-icons .header-icons__profile{
+    border-radius: 20px;
+}
+
+main{
+    background-color: #fafafa;
+    width: inherit;
+    height: 320px;
+    display: grid;
+    grid-template-areas:  "photo photo information information information information information"
+    "photo photo information information information information information"
+    "photos photos photos photos photos photos photos"
+    ; 
+    grid-template: repeat(3,1fr) / repeat(7,1fr)
+    gap: 20px;
+} 
+
+.personal-photo{
+grid-area: photo photo  ;
+
+}
+
+.personal-information{
+    grid-area: information;
+    width: 310px;
+    display:block;
+    padding: 40px 20px;
+}
+.personal-information__settings{
+    width: inherit;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.personal-information__settings a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid #dbdbdb;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.personal-information__stats{
+    width: inherit;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#photo-profile{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+   
+}
+
+.personal-information__general p{
+    
+    margin: 0;
+    padding: 2px;
+}
+
+
+
+
+.container-content{
+    display: grid;
+    padding: 15px 50px;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr ;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+.container-content img{
+    width: 200px;
+    height: 200px;
+  
 }

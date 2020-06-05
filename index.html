@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Instagram</title>
 </head>
 <body>
@@ -11,45 +11,55 @@
     
     <header>
         <div class="header-logo">
-            <img src="assets/logo_instagram.png" alt="logo" class="logo">
+            <img src="img/logo_instagram.png" alt="logo" class="logo">
         </div>
         <div class="header-search">
             <input type="text" placeholder="Buscar">
         </div>
         <div class="header-icons">
-            <a href=""><img width="20px" height="20px" src="assets/home.png" alt="Home"></a>
-            <a href=""><img width="20px" height="20px" src="assets/message.png" alt="message"></a>
-            <a href=""><img width="20px" height="20px" src="assets/explore.png" alt="search"></a>
-            <a href=""><img width="30px" height="18px" src="assets/like.jpg" alt="like"></a>
-            <a href=""><img width="20px" height="20px" class="header-icons__profile" src="assets/profile_photo.jpg" alt="profile"></a>
+            <a href=""><img width="20px" height="20px" src="img/home.png" alt="Home"></a>
+            <a href=""><img width="20px" height="20px" src="img/message.png" alt="message"></a>
+            <a href=""><img width="20px" height="20px" src="img/explore.png" alt="search"></a>
+            <a href=""><img width="30px" height="18px" src="img/like.jpg" alt="like"></a>
+            <a href=""><img width="20px" height="20px" class="header-icons__profile" src="img/white-black-profile.png" alt="profile"></a>
         </div>
     </header>
 
     <!-- Definiendo el main -->
-    <main>
-        
-        <div>
-            <!-- <img class="main-container__profile" src="profile_photo.jpg" alt="photo_profile"> -->
-        </div> 
-        <div class="main-container__information">
-
-        </div>
-        <div class="main-container__highlight">
-          
+    <main class="personal">
+        <figure class="personal-photo">
+            <img id="photo-profile" src="img/white-black-profile.png" alt="profile-photo">
+        </figure>
+        <div class="personal-information">
+            <div class="personal-information__settings">
+                <p>wdiazplus</p>
+                <a href="">Editar perfil</a>
+            </div>
+            <div class="personal-information__stats">
+                <p>24 publicaciones</p>
+                <a>55 seguidores</a>
+                <a>84 seguidos</a>
+            </div>
+            <div class="personal-information__general">
+                <p>Wilmer Diaz</p>
+                <p>Mathematician- Data Science JR</p>
+                <p>I love to teach and study</p>
+                <p>Design and front-end development as hobbies</p>
+            </div>
         </div>
     </main>
 
     <!-- Definiendo el grid de imágenes -->
     <section class="container-content">
-        <img src="assets/undraw_indoor_bike_pwa4.svg" alt="1" >
-        <img src="assets/undraw_my_app_grf2.svg" alt="2" >
-        <img src="assets/undraw_spreadsheet_69ax.svg" alt="3" >
-        <img src="assets/undraw_indoor_bike_pwa4.svg" alt="1" >
-        <img src="assets/undraw_my_app_grf2.svg" alt="2" >
-        <img src="assets/undraw_spreadsheet_69ax.svg" alt="3" >
-        <img src="assets/undraw_indoor_bike_pwa4.svg" alt="1" >
-        <img src="assets/undraw_my_app_grf2.svg" alt="2" >
-        <img src="assets/undraw_spreadsheet_69ax.svg" alt="3" >
+        <img src="img/undraw_indoor_bike_pwa4.svg" alt="1" >
+        <img src="img/undraw_my_app_grf2.svg" alt="2" >
+        <img src="img/undraw_spreadsheet_69ax.svg" alt="3" >
+        <img src="img/undraw_indoor_bike_pwa4.svg" alt="1" >
+        <img src="img/undraw_my_app_grf2.svg" alt="2" >
+        <img src="img/undraw_spreadsheet_69ax.svg" alt="3" >
+        <img src="img/undraw_indoor_bike_pwa4.svg" alt="1" >
+        <img src="img/undraw_my_app_grf2.svg" alt="2" >
+        <img src="img/undraw_spreadsheet_69ax.svg" alt="3" >
         
     </section>
     <footer>
